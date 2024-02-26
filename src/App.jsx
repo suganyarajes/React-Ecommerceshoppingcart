@@ -17,7 +17,7 @@ const App = () => {
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5174/products.json")
+    fetch("products.json")
       .then(response => response.json())
       .then((result) => {
         if (result.data.length > 0) {
