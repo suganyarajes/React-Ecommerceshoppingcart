@@ -85,6 +85,10 @@
   box-sizing: border-box;
 }
 
+
+
+
+
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
@@ -122,6 +126,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
 }
+
 @media (min-width: 1200px) {
   h1, .h1 {
     font-size: 2.5rem;
@@ -645,26 +650,51 @@ progress {
   .container-sm, .container {
     max-width: 540px;
   }
+  
+img,
+svg {
+  vertical-align: middle;
+}
 }
 @media (min-width: 768px) {
   .container-md, .container-sm, .container {
     max-width: 720px;
   }
+  
+img,
+svg {
+  vertical-align: middle;
+}
 }
 @media (min-width: 992px) {
   .container-lg, .container-md, .container-sm, .container {
     max-width: 960px;
   }
+  
+img,
+svg {
+  vertical-align: middle;
+}
 }
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1140px;
   }
+  
+img,
+svg {
+  vertical-align: middle;
+}
 }
 @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1320px;
   }
+  
+img,
+svg {
+  vertical-align: middle;
+}
 }
 .row {
   --bs-gutter-x: 1.5rem;

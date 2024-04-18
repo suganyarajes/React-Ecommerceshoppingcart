@@ -1,24 +1,23 @@
-
-
 import React from 'react';
 import PropTypes from 'prop-types';
 
 const Product = ({ product, onAddToCart, onRemoveFromCart, isInCart }) => {
   return (
-    <div className="product">
+    <div className="card h-100">
       <img
         src={product.image}
+        className="card-img-top img-fluid"
         alt={product.name}
-        style={{ width: '450px', height: '300px' }} 
       />
-      <h6>{product.name}</h6>
-      <p>${product.actualCost}</p>
-     
-      {isInCart ? (
-        <button onClick={onRemoveFromCart}>Remove from Cart</button>
-      ) : (
-        <button onClick={() => onAddToCart(product)}>Add to Cart</button>
-      )}
+      <div className="card-body">
+        <h5 className="card-title">{product.name}</h5>
+        <p className="card-text">${product.actualCost}</p>
+        {isInCart ? (
+          <button onClick={onRemoveFromCart} className="btn btn-danger">Remove from Cart</button>
+        ) : (
+          <button onClick={onAddToCart} className="btn btn-primary">Add to Cart</button>
+        )}
+      </div>
     </div>
   );
 };
@@ -28,6 +27,7 @@ Product.propTypes = {
     id: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
+    actualCost: PropTypes.number.isRequired,
   }).isRequired,
   onAddToCart: PropTypes.func.isRequired,
   onRemoveFromCart: PropTypes.func.isRequired,
