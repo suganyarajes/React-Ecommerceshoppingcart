@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Product = ({ product, onAddToCart, onRemoveFromCart, isInCart }) => {
   return (
-    <div className="card h-100">
+    <div className="card h-100 mt-2">
       <img
         src={product.image}
         className="card-img-top img-fluid"

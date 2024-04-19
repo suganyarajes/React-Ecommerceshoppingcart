@@ -38,7 +38,7 @@ export default function ProductCard({
           </div>
         </div>
 
-        <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
+        <div className="card-footer p-4 pt-0 border-top-0 bg-transparent ">
           <div className="text-center">
             <button
               className="btn btn-outline-dark mt-auto"
